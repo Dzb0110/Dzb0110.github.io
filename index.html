@@ -170,6 +170,14 @@ section{padding-block:clamp(1.7rem,3.6vw,2.5rem)}
 .row .when{grid-row:1;grid-column:2;font-family:var(--f-mono);font-size:.76rem;color:var(--ink-3);
            white-space:nowrap;font-variant-numeric:tabular-nums}
 .row .detail{grid-column:1/-1;color:var(--ink-2);font-size:.93rem;max-width:var(--measure)}
+.phases{grid-column:1/-1;display:flex;flex-direction:column;gap:.55rem;
+        margin-top:.6rem;max-width:var(--measure)}
+.ph{display:grid;grid-template-columns:9.5rem 1fr;gap:.9rem;
+    font-size:.92rem;color:var(--ink-2)}
+.ph-when{font-family:var(--f-mono);font-size:.71rem;color:var(--ink-3);
+         font-variant-numeric:tabular-nums;padding-top:.2rem}
+.ph strong{color:var(--ink);font-weight:600}
+@media (max-width:560px){.ph{grid-template-columns:1fr;gap:.1rem}}
 @media (max-width:560px){.row{grid-template-columns:1fr}.row .when{grid-row:auto;grid-column:1}}
 
 .honors{display:flex;flex-direction:column;gap:.85rem;max-width:var(--measure);padding:0;margin:0;list-style:none}
@@ -360,12 +368,29 @@ footer{border-top:1px solid var(--rule);padding-block:2.5rem 3.5rem;margin-top:1
     <div class="row"><span class="what">Student Assistant — Innovation &amp; Research Commons</span>
       <span class="when">Summer 2025</span>
       <span class="where">Ralph Brown Draughon Library, Auburn University</span></div>
-    <div class="row"><span class="what">Team Lead</span><span class="when">Aug 2020 – Jun 2023</span>
-      <span class="where">Cognizant Technology Solutions · Pune, India</span>
-      <span class="detail">Dexia, Paris — Control-M, BMC software.</span></div>
-    <div class="row"><span class="what">Associate</span><span class="when">Sep 2019 – Apr 2020</span>
-      <span class="where">Cognizant Technology Solutions · Pune, India</span>
-      <span class="detail">Key Bank, USA — mainframe modernization: COBOL, JCL, CICS.</span></div>
+    <div class="row">
+      <span class="what">Software Engineer &rarr; Data Analyst &rarr; ML Engineer</span>
+      <span class="when">Sep 2019 – Jun 2023</span>
+      <span class="where">Cognizant Technology Solutions · Pune, Maharashtra, India</span>
+      <div class="phases">
+        <div class="ph"><span class="ph-when">Sep 2019 – Feb 2020</span>
+          <span><strong>Foundation &amp; training</strong> — structured onboarding in data
+          analysis fundamentals, exploratory data analysis, statistical methods and
+          data preprocessing pipelines.</span></div>
+        <div class="ph"><span class="ph-when">Mar 2020 – Feb 2021</span>
+          <span><strong>Data Analyst</strong> — built Python analytics dashboards in Power BI
+          and Tableau to monitor IT incident trends for enterprise clients; root-cause work
+          with operations teams cut incident volume by 25%.</span></div>
+        <div class="ph"><span class="ph-when">Mar 2021 – Feb 2022</span>
+          <span><strong>Machine Learning Engineer</strong> — led an internal predictive-analytics
+          project, designing and evaluating supervised models in scikit-learn and pandas, with
+          feature engineering, validation and benchmarking across architectures.</span></div>
+        <div class="ph"><span class="ph-when">Mar 2022 – Jun 2023</span>
+          <span><strong>Generative AI</strong> — deployed LLM solutions into enterprise
+          workflows, built Retrieval-Augmented Generation pipelines grounding outputs in
+          internal knowledge bases, and fine-tuned models on domain-specific data.</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
